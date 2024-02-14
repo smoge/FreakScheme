@@ -1,5 +1,3 @@
-stack.yaml.lock
-.stack-work/
 
 dist
 dist-*
@@ -23,3 +21,4 @@ cabal.config
 .tags
 TAGS
 .vscode/tasks.json
+stack.yaml.lock
