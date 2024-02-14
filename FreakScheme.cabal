@@ -1,0 +1,34 @@
+cabal-version:       2.2
+
+name:                FreakScheme
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/FreakScheme#readme
+license:             BSD-3-Clause
+license-file:        LICENCE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2024 Author name here
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+executable FreakScheme
+  hs-source-dirs:      source
+  default-language:    Haskell2010
+  default-extensions:  UnicodeSyntax
+                     , OverloadedStrings
+  main-is:             Main.hs
+  build-depends:       base
+                     , base-unicode-symbols
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
