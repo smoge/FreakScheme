@@ -23,6 +23,7 @@ executable FreakScheme
   main-is:             Main.hs
   build-depends:       base
                      , base-unicode-symbols
+                     , mtl
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
