@@ -1,5 +1,8 @@
 # FreakScheme
 
+Feeling like a freak on a leash
+Feeling like I have no release 
+
 A Scheme interpreter written in Haskell, work in progress,
 
 Welcome to FreakScheme, where the charm of Scheme meets the power of Haskell,
