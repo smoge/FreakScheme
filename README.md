@@ -17,3 +17,5 @@ and the REPL is your trusty sidekick.
 ## 📜 The Sacred Scrolls
 
 FreakScheme is bound by the GLP License, a testament to FREEDOM.
+
+![alt text](whatever/image.png) 
