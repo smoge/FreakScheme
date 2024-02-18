@@ -4,13 +4,13 @@ version:            0.1.0.0
 
 -- synopsis:
 -- description:
-homepage:           https://github.com/githubuser/FreakScheme#readme
-license:            BSD-3-Clause
+homepage:           https://github.com/smoge/FreakScheme#readme
+license:            GPL-3
 license-file:       LICENCE
-author:             Author name here
+author:             Bernardo Barros (based on online tutorials)
 maintainer:         example@example.com
-copyright:          2024 Author name here
-category:           Web
+copyright:          2024 Bernardo Barros and others
+category:           Language
 build-type:         Simple
 extra-source-files:
     CHANGELOG.md
