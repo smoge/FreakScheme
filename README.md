@@ -1,6 +1,9 @@
 # FreakScheme
 
-A Scheme interpreter written in Haskell, sort of. 
+Feeling like a freak on a leash
+Feeling like I have no release 
+
+A Scheme interpreter written in Haskell, work in progress,
 
 Welcome to FreakScheme, where the charm of Scheme meets the power of Haskell,
 following the original insights of Adam Wespiser, and his legendary "Write You A
