@@ -7,6 +7,7 @@ import Control.Monad.Except
 import Control.Monad.Reader
 import qualified Data.Map as Map
 import Data.Text as T
+import Data.Typeable
 
 data LispVal
   = Atom T.Text
@@ -17,7 +18,7 @@ data LispVal
   | Lambda IFunc EnvCtx
   | Nil
   | Bool Bool
-  deriving (Eq, Typable)
+  deriving (Eq, Typeable)
 
 instance Show LispVal where
   show = T.unpack . showVal

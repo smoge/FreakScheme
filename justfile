@@ -8,8 +8,6 @@ build:
 # Build the project 
 build-watch:
     stack build --file-watch --pedantic
-
-
 # Run the project
 run:
     stack run
