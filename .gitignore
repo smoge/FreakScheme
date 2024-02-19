@@ -22,3 +22,4 @@ cabal.config
 TAGS
 .vscode/tasks.json
 stack.yaml.lock
+private/
