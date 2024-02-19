@@ -8,7 +8,7 @@ following the original insights of Adam Wespiser, and his legendary "Write You A
 Scheme, Version 2.0."
 
 
-Eventually, I will use the experience of this project for more specific projects.
+Eventually, I will use the experience of this project for more specific DSL interpreter projects.
 
 
 
@@ -18,7 +18,7 @@ Eventually, I will use the experience of this project for more specific projects
 > Feeling like I have no release
 >
 >
- 
+
 The project draws its inspiration from the insightful work of Adam Wespiser, who penned "Write You A Scheme, Version 2.0". His work serves as a guiding light for this project.
 
 ## 📜 The Sacred Scrolls
