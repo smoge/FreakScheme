@@ -2,10 +2,10 @@ cabal-version:      2.2
 name:               FreakScheme
 version:            0.1.0.0
 
--- synopsis:
--- description:
+synopsis:           Brief description of your package
+description:        Detailed description of your package
 homepage:           https://github.com/smoge/FreakScheme#readme
-license:            GPL-3
+license:            GPL-3.0-or-later
 license-file:       LICENCE
 author:             Bernardo Barros (based on online tutorials)
 maintainer:         example@example.com
@@ -13,7 +13,7 @@ copyright:          2024 Bernardo Barros and others
 category:           Language
 build-type:         Simple
 extra-source-files:
-    CHANGELOG.md
+    CHANGELOG.md, LICENCE,
     README.md
 
 executable FreakScheme
@@ -25,7 +25,7 @@ executable FreakScheme
 
     main-is:            Main.hs
     build-depends:
-        , base
+         base
         , base-unicode-symbols
         , mtl
 
