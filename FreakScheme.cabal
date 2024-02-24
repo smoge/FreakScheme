@@ -11,6 +11,9 @@ maintainer:         example@example.com
 copyright:          2024 Bernardo Barros and others
 category:           Language
 build-type:         Simple
+
+
+tested-with:        GHC ==9.6.*
 extra-source-files:
     CHANGELOG.md
     LICENCE
