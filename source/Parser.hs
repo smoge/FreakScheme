@@ -80,6 +80,7 @@ parseText = do
   pure $ String . T.pack $ p
 
 parseNegNum :: Parser LispVal
+
 parserNegNum = do
   char '-'
   n <- many1 digit
@@ -90,9 +91,11 @@ parserNegNum = do
 type Radix = (Integer, Parser Char)
 
 parseNumber :: Parser LispVal
+
 parserNumber = Number . read <$> many1 digit
 
 parseList :: Parser LispVal
+
 parseLitt = List . concat <$> Text.Parsex.many parseExpr `sepBy` (char ' ' <|> char '\n')
 
 parseSExp = List . concat <$> m_parens (Text.Parsex.many parseExpr `sepBy` (char ' ' <|> char '\n'))
@@ -104,25 +107,26 @@ parseQuote = do
   pure $ List [Atom "quote", x]
 
 parseReserved :: Parser LispVal
-parseReserved = do
-   reservedOp "Nil" >> return Nil
-   <|> (reservedOp "#t" >> pure (Bool True))
-   <|> (reservedOp "#f" >> pure (Bool False))
+parseReserved =
+  do
+    reservedOp "Nil" >> return Nil
+    <|> (reservedOp "#t" >> pure (Bool True))
+    <|> (reservedOp "#f" >> pure (Bool False))
 
 parseExpr :: Parser LispVal
-parseExpr = parseReserved <|> parseNumber
-  <|> try parseNegNum 
-  <|> parseAtom
-  <|> parseText
-  <|> parseQuote
-  <|> parseSExp
-  <|> parseList
-
+parseExpr =
+  parseReserved
+    <|> parseNumber
+    <|> try parseNegNum
+    <|> parseAtom
+    <|> parseText
+    <|> parseQuote
+    <|> parseSExp
+    <|> parseList
 
 {- Parsec needs to play nice with the rest of the project, so we need a way to run
 the parser on either text from the REPL or a program ﬁle and return LispVal
 or ParseError. There’s a monad for that! -}
-
 
 contents :: Parser a -> Parser a
 contents p = do
@@ -143,7 +147,3 @@ readExpr = parse (contents parseExpr) "<stdin>"
 
 readExprFile :: SourceName -> T.Text -> Either ParseError LispVal
 readExprFile = parse (contents parseExpr) "<file>"
-
-
-
-

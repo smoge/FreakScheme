@@ -105,11 +105,6 @@ This nuanced approach to error handling ensures that parsing errors are clearly
 communicated, while also acknowledging the challenges associated with managing
 IO errors within our interpreter's framework.-}
 
-
-
-
-
-
 -- TODO !!!!!!-- !!!! TO TO !!!!
 
 -- [ Understanding Check ]
@@ -126,4 +121,3 @@ IO errors within our interpreter's framework.-}
 -- Text.PrettyPrint offers a rich way to display messages using pretty print
 -- combinators. Implement a PrettyPrint interface for LispException that
 -- provides a uniform interface.
-

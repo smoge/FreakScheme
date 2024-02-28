@@ -8,6 +8,7 @@ build:
 # Build the project 
 build-watch:
     stack build --file-watch --pedantic
+
 # Run the project
 run:
     stack run
@@ -23,3 +24,8 @@ clean:
 # Generate documentation
 docs:
     stack haddock
+
+# Format Haskell project with fourmolu
+format:
+    @echo "Formating the Haskell project (ormolu)..."
+    find ./source -name '*.hs' | xargs ormolu -i
