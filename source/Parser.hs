@@ -90,11 +90,10 @@ parserNegNum = do
 type Radix = (Integer, Parser Char)
 
 parseNumber :: Parser LispVal
-
-parserNumber Number . read <$> many1 digit
+parserNumber = Number . read <$> many1 digit
 
 parseList :: Parser LispVal
-parserLit = List . concat <$> Text.Parsex.many parseExpr `sepBy` (char ' ' <|> char '\n')
+parseLitt = List . concat <$> Text.Parsex.many parseExpr `sepBy` (char ' ' <|> char '\n')
 
 parseSExp = List . concat <$> m_parens (Text.Parsex.many parseExpr `sepBy` (char ' ' <|> char '\n'))
 
