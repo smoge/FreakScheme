@@ -25,4 +25,4 @@ The project draws its inspiration from the insightful work of Adam Wespiser, who
 
 FreakScheme is bound by the GLP License, a testament to FREEDOM.
 
-![alt text](whatever/image.png) 
+![alt text](whatever/s2.git) 
