@@ -12,9 +12,15 @@ import Env
 import LispVal
 import Text.Parsec
 
--- Eval is a monad that will contain the reader monad, which will
--- lexical scoping, user input, and will contain the return
--- LispVal for any valid expression, done by monad transformers
+
+{- Note [Eval]
+  
+  Eval is a monad that will contain the reader monad, which will
+  lexical scoping, user input, and will contain the return
+  LispVal for any valid expression, done by monad transformers
+
+-}
+
 
 newtype Eval a = Eval {unEval :: ReaderT EnvCtx IO a}
   deriving

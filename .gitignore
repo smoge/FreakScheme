@@ -23,3 +23,8 @@ TAGS
 .vscode/tasks.json
 stack.yaml.lock
 private/
+#*
+source/#*.hs#
+#stack.yaml#
+#FreakScheme.cabal#
+source/#Notes.md#

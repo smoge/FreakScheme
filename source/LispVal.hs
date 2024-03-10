@@ -9,6 +9,22 @@ import qualified Data.Map as Map
 import Data.Text as T
 import Data.Typeable
 
+
+
+{-
+
+Number, Bool e String são exatamente como em Haskell.
+
+- monad transformers:
+  - IO
+' - Reader
+
+
+
+
+
+
+-}
 data LispVal
   = Atom T.Text
   | List [LispVal]
